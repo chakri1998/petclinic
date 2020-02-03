@@ -8,6 +8,7 @@ terraform {
 provider "aws" {}
 
 resource "aws_instance" "backend" {
+  version = "~> 2.47"
   ami                    = "ami-04763b3055de4860b"
   instance_type          = "t2.micro"
   key_name               = "var.key_name"
